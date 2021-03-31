@@ -21,14 +21,14 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
-            return await_context.Users.ToListAsync();
+            return await _context.users.ToListAsync();
         }
 
         // api/users/3
         [HttpGet("{id}")]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
-            return await_context.Users.FindAsync(id);
+            return await _context.users.FindAsync(id);
         }
 
     }
