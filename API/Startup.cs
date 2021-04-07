@@ -56,7 +56,9 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
+            app.UseCors(x => x.WithOrigins("https://localhost:4200").AllowAnyHeader.AllowAnyMethod);
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:5001/api"));
+
 
             app.UseAuthentication();
             app.UseAuthorization();

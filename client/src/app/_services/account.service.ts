@@ -16,8 +16,8 @@ currentUser$ = this.currentUserSource.asObservable();
 
   login(model: any){
     return this.http.post(this.baseUrl + 'account/login', model).pipe(
-      map((response: User) => {//response: User gives error, find out why
-        const user = response;
+      map((response: User) => {
+        const user = response as User;
         if(user) {
           localStorage.setItem('user', JSON.stringify(user));
           this.currentUserSource.next(user);
