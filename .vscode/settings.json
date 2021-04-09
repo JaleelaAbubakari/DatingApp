@@ -1,4 +1,5 @@
 {
     "C_Cpp.errorSquiggles": "Enabled",
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": true,
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
 }
