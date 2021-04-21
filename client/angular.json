@@ -34,7 +34,9 @@
               
               "./node_modules/bootswatch/dist/united/bootstrap.css",
               "./node_modules/ngx-toastr/toastr.css",
+              "./node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
+              
             ],
             "scripts": []
           },
