@@ -10,3 +10,5 @@ namespace API.Interfaces
         Task<DeletionResult> DeletePhotoAsync(string publicId);
     }
 }
+
+
