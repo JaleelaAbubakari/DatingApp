@@ -1,0 +1,17 @@
+<div *ngFor="let photo of photos">
+    <div class="card mb-4">   
+        <div class="card-img-wrapper">
+            <img src="{{photo.url || './assets/user.png'}}" alt="{{member.knownAs}}" class="card-img-top" />
+        </div>
+        <h5 class="card-title">{{photo.username}}</h5>
+        <div class=" card-body text-center">
+            <button 
+            (click)="approvePhoto(photo.id)"
+            class="btn btn-sm btn-success">Approve</button>
+            <button 
+            (click)="rejectPhoto(photo.id)" 
+            class="btn btn-sm btn-danger">
+            Reject</button>
+        </div>
+</div>
+
